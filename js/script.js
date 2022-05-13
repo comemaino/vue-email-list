@@ -11,10 +11,9 @@ const app = new Vue({
         .then((resp) => {
           const emailAddress = resp.data.response;
 
-          console.log(emailAddress);
-
           this.emailsArray.push(emailAddress);
         });
     }
+    console.log(this.emailsArray);
   },
 });

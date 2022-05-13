@@ -20,7 +20,12 @@
   <body>
     <div id="root">
       <ul>
-        <li v-for="emailAddress in emailsArray">{{ emailAddress }}</li>
+        <li
+          v-for="emailAddress in emailsArray"
+          v-if="emailsArray.length === 10"
+        >
+          {{ emailAddress }}
+        </li>
       </ul>
     </div>
 
